@@ -3,6 +3,8 @@ package com.br.forum.forum.controllers;
 import java.net.URI;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import com.br.forum.forum.dto.TopicoDto;
 import com.br.forum.forum.form.TopicoForm;
 import com.br.forum.forum.models.Topico;
@@ -37,7 +39,7 @@ public class TopicosController {
     }
 
     @PostMapping("/cadastrarTopico")
-    public ResponseEntity<TopicoDto> cadastrarTopico(@RequestBody TopicoForm form, UriComponentsBuilder uriBuilder){
+    public ResponseEntity<TopicoDto> cadastrarTopico(@Valid @RequestBody TopicoForm form, UriComponentsBuilder uriBuilder){
         Topico topico = form.converter(cursoRepository);
         this.topicoRepository.save(topico);
 
