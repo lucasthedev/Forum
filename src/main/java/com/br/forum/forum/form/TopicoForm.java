@@ -1,7 +1,5 @@
 package com.br.forum.forum.form;
 
-import java.util.Optional;
-
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 

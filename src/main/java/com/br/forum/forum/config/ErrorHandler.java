@@ -3,8 +3,6 @@ package com.br.forum.forum.config;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.EntityNotFoundException;
-
 import com.br.forum.forum.dto.ErroFormDto;
 
 import org.springframework.beans.factory.annotation.Autowired;
